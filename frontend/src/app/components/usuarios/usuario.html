@@ -1,0 +1,22 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Senha</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Conteúdo da tabela -->
+         <tr>
+            @for (usuario of usuarios; track $index)
+            {
+                <tr>
+                    <td>{{usuario.id}}</td>
+                    <td>{{usuario.nome}}</td>
+                    <td>{{usuario.senha}}</td>
+                </tr>
+            }
+         </tr>
+    </tbody>
+</table>
